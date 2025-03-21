@@ -53,3 +53,38 @@ Python String casefold() method is used to convert string to lowercase. It is si
   fillchar: (optional) characters which need to be padded. If it’s not provided, space is taken as the default argument.
 - Returns:-
   Returns a string padded with specified fillchar and it doesn’t modify the original string.
+
+- String count() Method
+
+  The count() method in Python returns the number of times a specified substring appears in a string. It is commonly used in string analysis to quickly check how often certain characters or words appear.
+
+- Syntax of count() Method :- string.count(substring, start = 0, end = len(s))
+- Parameters :-
+  substring (required): The substring we want to count within the original string.
+  start (optional): The index position in the string where the search should begin. Default is 0.
+  end (optional): The index position in the string where the search should stop. Default is the length of the string (i.e., up to the end).
+- Return Type :-
+  The count() method returns an integer representing the number of times the specified substring appears within the given range of the string.
+
+Strings encode() method
+
+String encode() method in Python is used to convert a string into bytes using a specified encoding format. This method is beneficial when working with data that needs to be stored or transmitted in a specific encoding format, such as UTF-8, ASCII, or others.
+-Syntax of encode() method
+string.encode(encoding=”utf-8″, errors=”strict”)
+-Parameters
+encoding (optional):
+The encoding format to use. The default is "utf-8".
+Examples include "ascii", "latin-1", "utf-16", etc.
+-Return Type
+Returns a bytes object containing the encoded version of the string.
+
+- String endswith() Method
+  The endswith() method is a tool in Python for checking if a string ends with a particular substring. It can handle simple checks, multiple possible endings and specific ranges within the string. This method helps us make our code cleaner and more efficient, whether we’re checking for file extensions, validating URLs or processing text.
+  -Syntax of endswith() Method:
+  str.endswith(suffix, start, end)
+  -Parameters:
+  suffix: Suffix is nothing but a string that needs to be checked.
+  start: Starting position from where suffix is needed to be checked within the string.
+  end: Ending position + 1 from where suffix is needed to be checked within the string.
+  -Return:
+  Returns True if the string ends with the given suffix otherwise return False.
