@@ -79,6 +79,7 @@ Examples include "ascii", "latin-1", "utf-16", etc.
 Returns a bytes object containing the encoded version of the string.
 
 - String endswith() Method
+
   The endswith() method is a tool in Python for checking if a string ends with a particular substring. It can handle simple checks, multiple possible endings and specific ranges within the string. This method helps us make our code cleaner and more efficient, whether we’re checking for file extensions, validating URLs or processing text.
   -Syntax of endswith() Method:
   str.endswith(suffix, start, end)
@@ -88,3 +89,37 @@ Returns a bytes object containing the encoded version of the string.
   end: Ending position + 1 from where suffix is needed to be checked within the string.
   -Return:
   Returns True if the string ends with the given suffix otherwise return False.
+
+expandtabs() method
+
+expandtabs() method in Python is used to replace all tab characters (\t) in a string with spaces. This method allows for customizable spacing, as we can specify the number of spaces for each tab. It is especially useful when formatting text for better readability or alignment.
+-Syntax of expandtabs() method:-
+string.expandtabs(tabsize)
+-Parameters:-
+tabsize (optional) : Specifies the number of spaces per tab. The default value is 8.
+
+- Return Type:-
+  This method returns a new string with all the tab characters replaced with spaces.
+
+find() Method
+
+The find() method in Python returns the index of the first occurrence of a substring within a given string. If the substring is not found, it returns -1. This method is case-sensitive, which means “abc” is treated differently from “ABC“.
+-Syntax of find() Method:-
+s.find(substring, start, end)
+
+- Parameter:-
+  ubstring: The substring to search for within the main string s.
+  start (optional): The starting index from where to begin the search.
+  end (optional): The ending index where the search should stop.
+  -Return Value:-
+  Returns the first index of the substring if it is found within the specified range.
+  Returns -1 if the substring is not found.
+
+  format() Method
+
+The format() method is a powerful tool that allows developers to create formatted strings by embedding variables and values into placeholders within a template string. This method offers a flexible and versatile way to construct textual output for a wide range of applications. Python string format() function has been introduced for handling complex string formatting more efficiently. Sometimes we want to make generalized print statements in that case instead of writing print statements every time we use the concept of formatting.
+-Syntax: { }.format(value)
+-Parameters:
+value : Can be an integer, floating point numeric constant, string, characters or even variables.
+-Returntype:-
+Returns a formatted string with the value passed as parameter in the placeholder position.
