@@ -123,3 +123,40 @@ The format() method is a powerful tool that allows developers to create formatte
 value : Can be an integer, floating point numeric constant, string, characters or even variables.
 -Returntype:-
 Returns a formatted string with the value passed as parameter in the placeholder position.
+
+String format_map() Method
+
+Python String format_map() method is an inbuilt function in Python, which is used to return a dictionary key’s value.
+
+- Syntax:-
+  string.format_map(z)
+- Parameters :-
+  Here z is a variable in which the input dictionary is stored and string is the key of the input dictionary. input_dict: Takes a single parameter which is the input dictionary.
+- Returns:-
+  Returns key’s values of the input dictionary.
+
+String index() Method
+
+The index() method in Python is used to find the position of a specified substring within a given string. It is similar to the find() method but raises a ValueError if the substring is not found, while find() returns -1. This can be helpful when we want to ensure that the substring exists in the string before proceeding.
+
+- Syntax of index() :-
+  s.index(substring, start=0, end=len(s))
+- Parameters:-
+  substring: The substring to locate within the string s.
+  start (optional): The starting index for the search. Defaults to 0 if not provided.
+  end (optional): The ending index for the search. If not provided, it defaults to the length of the string.
+- Return Type:-
+  Returns the lowest index of the substring if found in the given string.
+  Raises a ValueError if the substring is not found in the specified range.
+
+String isdigit() Method
+
+The isdigit() method is a built-in Python function that checks if all characters in a string are digits. This method returns True if each character in the string is a numeric digit (0-9), and False otherwise.
+
+- Syntax of isdigit() :-
+  s.isdigit()
+- Parameters:-
+  The isdigit() method does not take any parameters
+- Return Value:-
+  Returns True if all characters in the string are numeric (0-9).
+  Returns False if there are any non-numeric characters.
