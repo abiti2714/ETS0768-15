@@ -3,51 +3,68 @@
 - String upper () Method
 
 upper() method in Python is a built-in string method that converts all lowercase letters in a string to uppercase. This method is simple to use and does not modify the original string; instead, it returns a new string with the modifications applied.
--Syntax of upper() method :- string.upper()
--Parameters :- The upper() method does not take any parameters.
--Return Type :- This method returns a new string in which all lowercase characters in the original
+-Syntax of upper() method :-
+string.upper()
+-Parameters :-
+The upper() method does not take any parameters.
+-Return Type :-
+This method returns a new string in which all lowercase characters in the original
 string are converted to uppercase. If the original string has no lowercase letters then it returns the string unchanged.
 
 - String lower() Method
 
 The lower() method in Python converts all uppercase letters in a string to their lowercase. This method does not alter non-letter characters (e.g., numbers, git initpunctuation).
 
-- Syntax of lower() method :- string.lower()
-- Parameters :- This method does not take any parameters.
-- Return Type :- The lower() method returns a new string with all uppercase characters converted  
+- Syntax of lower() method :-
+  string.lower()
+- Parameters :-
+  This method does not take any parameters.
+- Return Type :-
+  The lower() method returns a new string with all uppercase characters converted  
    to lowercase. The original string remains unchanged since strings in Python are immutable.
-- Practical applications of lower() :- The lower() method is very useful in various scenarios, such
+- Practical applications of lower() :-
+  The lower() method is very useful in various scenarios, such
   as making case-insensitive comparisons between strings.
 
-  - String Title method
+- String Title method
 
   title() method in Python is a simple way to convert a string to a title case, where the first letter of each word is capitalized and all other letters are lowercase.
 
-- Syntax of String title() :- string.title()
-- Parameters z:- title() doesn’t accept any parameter.
-- Return type :- string, converted to title case.
+- Syntax of String title() :-
+  string.title()
+- Parameters z:-
+  title() doesn’t accept any parameter.
+- Return type :-
+  string, converted to title case.
 
 - String capitalize() Method
 
 The capitalize() method in Python is used to change the first letter of a string to uppercase and make all other letters lowercase. It is especially useful when we want to ensure that text follows title-like capitalization, where only the first letter is capitalized.
 
-- Syntax of capitalize() Method :- s.capitalize()
-- Parameters :-The capitalize() method does not accept any parameters.
-- Return Value :- The method returns a new string with the first character capitalized and all other characters in lowercase. The original string remains unchanged.
+- Syntax of capitalize() Method :-
+  s.capitalize()
+- Parameters :-
+  The capitalize() method does not accept any parameters.
+- Return Value :-
+  The method returns a new string with the first character capitalized and all other characters in lowercase. The original string remains unchanged.
 
 - String casefold() Method
 
 Python String casefold() method is used to convert string to lowercase. It is similar to the Python lower() string method, but the case removes all the case distinctions present in a string.
 
-- Syntax: string.casefold()
-- Parameters: The casefold() method doesn’t take any parameters.
-- Return value: Returns the case folded string the string converted to lower case.
+- Syntax:
+  string.casefold()
+- Parameters:
+  The casefold() method doesn’t take any parameters.
+- Return value:
+  Returns the case folded string the string converted to lower case.
 
 - String center() Method
 
   center() method in Python is a simple and efficient way to center-align strings within a given width. By default, it uses spaces to fill the extra space but can also be customized to use any character we want.
 
-- Syntax :- string.center(length[, fillchar])
+- Syntax :-
+  string.center(length[, fillchar])
 - Parameters:-
   length: length of the string after padding with the characters.
   fillchar: (optional) characters which need to be padded. If it’s not provided, space is taken as the default argument.
@@ -58,7 +75,8 @@ Python String casefold() method is used to convert string to lowercase. It is si
 
   The count() method in Python returns the number of times a specified substring appears in a string. It is commonly used in string analysis to quickly check how often certain characters or words appear.
 
-- Syntax of count() Method :- string.count(substring, start = 0, end = len(s))
+- Syntax of count() Method :-
+  string.count(substring, start = 0, end = len(s))
 - Parameters :-
   substring (required): The substring we want to count within the original string.
   start (optional): The index position in the string where the search should begin. Default is 0.
@@ -156,7 +174,37 @@ The isdigit() method is a built-in Python function that checks if all characters
 - Syntax of isdigit() :-
   s.isdigit()
 - Parameters:-
-  The isdigit() method does not take any parameters
+  The isdigit() metho~d does not take any parameters
 - Return Value:-
   Returns True if all characters in the string are numeric (0-9).
   Returns False if there are any non-numeric characters.
+
+swapcase() Method
+
+swapcase() method in Python is used to return a new string where all the uppercase characters in the original string are converted to lowercase, and all the lowercase characters are converted to uppercase.
+-Syntax of String swapcase() method:-
+string.swapcase()
+
+- Parameters:-
+  The swapcase() method does not take any parameters.
+- Return Type:-
+  Returns a new string where all uppercase characters are converted to lowercase and all lowercase characters are converted to uppercase.
+
+strip() Method
+
+strip() method removes all leading and trailing whitespace characters from a string in Python. We can also customize it to strip specific characters by passing a string of characters to remove. It doesn’t modify the original string but returns a new one.
+-Syntax of strip() Method:-
+s.strip(chars)
+-Parameters::-
+chars(optional)A string specifying the set of characters to remove from the beginning and end of the string.
+If omitted, strip() removes all leading and trailing whitespace by default.
+-Return Type::-
+String: A new string with the specified characters (or whitespace) removed from both ends is returned.
+
+lstrip() Method
+
+The lstrip() method removes leading whitespace characters from a string. We can also specify custom characters to remove from the beginning/starting of the string.
+-Syntax of lstrip() Method:-
+s.lstrip(chars)
+s: The input string
+chars (optional): A set of characters to remove as trailing characters
