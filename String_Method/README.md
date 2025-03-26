@@ -208,3 +208,36 @@ The lstrip() method removes leading whitespace characters from a string. We can 
 s.lstrip(chars)
 s: The input string
 chars (optional): A set of characters to remove as trailing characters
+
+String rstrip() Method
+The rstrip() method removes trailing whitespace characters from a string. We can also specify custom characters to remove from end of string.
+
+- Syntax of rstrip() Method
+  s.rstrip(chars)
+  s: The input string
+  chars (optional): A set of characters to remove as trailing characters
+
+String replace() Method
+
+The replace() method replaces all occurrences of a specified substring in a string and returns a new string without modifying the original string
+
+- Syntax of String replace() Method
+  string.replace(old, new, count)
+- Parameters
+  old: The substring we want to replace.
+  new: The new substring that we want to replace with old substring.
+  count (optional): Specifies the maximum number of replacements to perform. If omitted, all occurrences are replaced.
+- Return Type
+  Returns a new string with the specified replacements made. The original string remains unchanged since strings in Python are immutable.
+
+Python String rsplit() Method
+Python String rsplit() method returns a list of strings after breaking the given string from the right side by the specified separator. It’s similar to the split() method in Python, but the difference is that rsplit() starts splitting from the end of the string rather than from the beginning.
+
+- Syntax of rsplit() method
+  str.rsplit(separator, maxsplit)
+- Parameters
+  separator: The is a delimiter. The string splits at this specified separator starting from the right side. If not provided then any white space character is a separator.
+  maxsplit: It is a number, which tells us to split the string into a maximum of provided number of times. If it is not provided then there is no limit.  
+  -Return Type
+  Returns a list of strings after breaking the given string from the right side by the specified separator.
+- Error: We will not get any error even if we are not passing any argument.
