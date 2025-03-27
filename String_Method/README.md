@@ -241,3 +241,41 @@ Python String rsplit() method returns a list of strings after breaking the given
   -Return Type
   Returns a list of strings after breaking the given string from the right side by the specified separator.
 - Error: We will not get any error even if we are not passing any argument.
+
+String join() Method
+The join() method in Python is used to concatenate the elements of an iterable (such as a list, tuple, or set) into a single string with a specified delimiter placed between each element.
+-Syntax of join()
+separator.join(iterable)
+
+- Parameters:
+  separator: The string placed between elements of the iterable.
+  iterable: A sequence of strings (e.g., list, tuple etc) to join together.
+- Return Value:
+  Returns a single string formed by joining all elements in the iterable, separated by the specified separator
+  If the iterable contains any non-string values and it raises a TypeError exception.
+
+String startswith()
+
+startswith() method in Python is a built-in string method that checks whether a given string starts with a specific prefix. It helps in efficiently verifying whether a string begins with a certain substring, which can be useful in various scenarios like filtering or validating input. In this article, we will understand about startswith() method.
+-Syntax of startswith() method
+string.startswith(prefix[, start[, end]])
+
+- Parameters:
+  prefix: The substring or a tuple of substrings to check for at the start of the string.
+  start (optional): The index where the search for the prefix begins. By default, it starts from index 0.
+  end (optional): The index where the search for the prefix ends. If not specified, the search goes till the end of the string.
+  -Return Type:
+  The method returns a Boolean:
+  True if the string starts with the specified prefix.
+  False if it does not.
+
+String isalpha() Method
+
+The isalpha() method checks if all characters in a given string are alphabetic. It returns True if every character in the string is a letter and False if the string contains any numbers, spaces, or special characters.
+
+- Syntax of isalpha() Method
+  string.isalpha()
+- Parameter:
+  No parameters are required.
+- Return Type:
+  Returns True if all characters in string are alphabetic (A-Z, a-z) and False otherwise.
