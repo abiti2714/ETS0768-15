@@ -279,3 +279,52 @@ The isalpha() method checks if all characters in a given string are alphabetic. 
   No parameters are required.
 - Return Type:
   Returns True if all characters in string are alphabetic (A-Z, a-z) and False otherwise.
+
+String translate() Method
+
+Python translate() method is used to transform a string by replacing or removing specific characters based on a translation table. This table is created using the str.maketrans() method. It’s ideal for scenarios where we need to:
+Replace specific characters with others.
+Remove unwanted characters like punctuation, digits or whitespace.
+Perform transformations without looping through the string manually.
+Syntax of translate() method:
+str.translate(table)
+
+- Parameters:
+  table: A translation table created using the str.maketrans() method.
+- Returns:
+  A new string where the specified characters are replaced or removed according to the translation table.
+- Python maketrans()
+  The maketrans() method is a built-in string method in Python that generates a translation table. It is primarily used in conjunction with the translate() method to perform character-by-character translations or deletions.
+- Python maketrans() Syntax
+- Syntax: maketrans(str1, str2, str3)
+- Parameters:
+  str1: Specifies the list of characters that need to be replaced.
+  str2: Specifies the list of characters with which the characters need to be replaced.
+  str3: Specifies the list of characters that need to be deleted.
+  -Returns:
+  Returns the translation table which specifies the conversions that can be used by translate()
+
+rjust() string methode
+
+The string rjust() method returns a new string of given length after substituting a given character in left side of original string.
+
+- Syntax:
+  string.rjust(length, fillchar)
+- Parameters:
+- length: length of the modified string. If length is less than or equal to the length of the original string then original string is returned.
+  -fillchar: (optional) characters which needs to be padded. If it’s not provided, space is taken as a default argument.
+- Returns:
+  Returns a new string of given length after substituting a given character in left side of original string.
+
+String zfill()
+
+zfill() method in Python is used to pad a string with zeros (0) on the left until it reaches a specified width.
+
+- Syntax of zfill() method
+  string.zfill(width)
+- Parameters
+  width (required):
+  The total length of the string after padding.
+  If the specified width is less than or equal to the length of the original string, no padding is applied.
+- Return Type
+  Returns a new string with zeros padded on the left to meet the specified width.
