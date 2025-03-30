@@ -33,3 +33,37 @@ list.clear()
   The clear() method does not take any parameters.
 - Return Type:
   It modifies the original list and does not return any value (None).
+
+List count() method
+
+The count() method is used to find the number of times a specific element occurs in a list. It is very useful in scenarios where we need to perform frequency analysis on the data.
+
+- Syntax of count() Method
+  list_name.count(value)
+  list_name: The list object where we want to count an element.
+- value: The element whose occurrences need to be counted.
+  The count() method returns an integer value, which represents the number of times the specified element appears in the list
+
+List extend() Method
+
+In Python, extend() method is used to add items from one list to the end of another list. This method modifies the original list by appending all items from the given iterable.
+Using extend() method is easy and efficient way to merge two lists or add multiple elements at once.
+
+- Syntax of List extend() Method
+  list_name.extend(iterable)
+- Parameters:
+  list_name: The list that will be extended
+  iterable: Any iterable (list, set, tuple, etc.)
+- Returns:
+  Python List extend() returns none.
+
+List index() – Find Index of Item
+
+list index() method searches for a given element from the start of the list and returns the position of the first occurrence.
+
+- Syntax of List index() Method
+  Syntax: list_name.index(element, start, end)
+- Parameters:
+  element: The element whose lowest index will be returned.
+  start(optional): The position from where the search begins.
+  end(optional): The position from where the search ends.
