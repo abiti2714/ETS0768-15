@@ -67,3 +67,37 @@ list index() method searches for a given element from the start of the list and 
   element: The element whose lowest index will be returned.
   start(optional): The position from where the search begins.
   end(optional): The position from where the search ends.
+
+insert() Method With Examples
+Python List insert() method inserts an item at a specific index in a list.
+List insert() method in Python is very useful to insert an element in a list. What makes it different from append() is that the list insert() function can add the value at any position in a list, whereas the append function is limited to adding values at the end.
+It is used in editing lists with huge amount of data, as inserting any missed value in that list is made very easy with this Python function.
+
+- List insert() Method Syntax
+  list_name.insert(index, element)
+- Parameters:
+  index: the index at which the element has to be inserted.
+  element: the element to be inserted in the list.
+- Return : The insert() method returns None. It only updates the current list.
+
+List pop() Method
+The pop() method is used to remove an element from a list at a specified index and return that element. If no index is provided, it will remove and return the last element by default. This method is particularly useful when we need to manipulate a list dynamically, as it directly modifies the original list.
+-Syntax of pop() method
+list_name.pop(index)
+
+- Parameters
+  index (optional): index of an item to remove. Defaults to -1 (last item) if argument is not provided.
+- Return Value
+  Returns the removed item from the specified index
+  Raises IndexError if the index is out of range.
+
+remove() Method
+Python list remove() function removes the first occurrence of a given item from list. It make changes to the current list. It only takes one argument, element we want to remove and if that element is not present in the list, it gives ValueError.
+
+- Syntax of remove() method
+  list_name.remove(obj)
+- Parameter
+  obj: object to be removed from the list
+- Return Type
+  The method does not return any value but removes the given object from the list.
+  Exception: If the element doesn’t exist, it throws ValueError: list.remove(x): x not in list exception.
