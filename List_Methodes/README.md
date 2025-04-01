@@ -101,3 +101,25 @@ Python list remove() function removes the first occurrence of a given item from 
 - Return Type
   The method does not return any value but removes the given object from the list.
   Exception: If the element doesn’t exist, it throws ValueError: list.remove(x): x not in list exception.
+
+List Reverse()
+
+The reverse() method is an inbuilt method in Python that reverses the order of elements in a list. This method modifies the original list and does not return a new list, which makes it an efficient way to perform the reversal without unnecessary memory uses.
+
+- Syntax of List reverse()
+  list_name.reverse()
+- Parameters: It doesn’t take any parameters.
+- Return Value: It doesn’t return any value.
+  Note: The reverse() method is specific to lists in Python (it’s an attribute of a list). Therefore, attempting to use the reverse() method on other data structures, such as strings, tuples, sets, or dictionaries, will result in an error.
+
+List sort() Method
+
+The sort() method in Python is a built-in function that allows us to sort the elements of a list in ascending or descending order and it modifies the list in place which means there is no new list created. This method is useful when working with lists where we need to arranged the elements in a specific order, whether numerically or alphabetically.
+
+- Syntax of sort() method
+  list_name.sort(key=None, reverse=False)
+- Parameter:
+  key (Optional): This is an optional parameter that allows we to specify a function to be used for sorting. For example, we can use the len() function to sort a list of strings based on their length.
+  everse (Optional): This is an optional Boolean parameter. By default, it is set to False to sort in ascending order. If we set reverse=True, the list will be sorted in descending order.
+- Return:
+  Python list sort() returns none.
