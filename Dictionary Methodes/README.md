@@ -63,3 +63,44 @@ keys() method in Python returns a view object displaying all the dictionary’s 
   None: keys() method does not take any parameters.
 - Returns:
   A view object that displays a list of all the keys in the dictionary. This object is dynamic, meaning that if the dictionary is modified, the view object will reflect those changes.
+
+pop() Method
+Python dictionary pop() method removes and returns the specified element from the dictionary.
+Dictionary pop() function in Python is an in-built function that is used to remove and return an element from a dictionary. It can take one or two arguments.
+Dictionary pop() function is very useful in the conditional removal of elements and handling missing values. It not only allows us to remove an element but we can also access its value.
+
+- Syntax of Dictionary pop()
+  dict.pop(key, def)
+- Parameters :
+  key : The key whose key-value pair has to be returned and removed.
+  def : The default value to return if specified key is not present.
+- Returns :
+  The value associated with the deleted key-value pair, if the key is present.
+  Default value if specified if key is not present.
+  KeyError, if key not present and default value not specified.
+
+popitem() method
+popitem() method in Python is used to remove and return the last key-value pair from the dictionary. It is often used when we want to remove a random element, particularly when the dictionary is not ordered.
+
+- popitem() syntax
+  dict.popitem()
+  Here, dict is the dictionary from which the key-value pair is to be removed.
+- Parameter:
+  None: The popitem() method does not take any parameters.
+- Returns:
+  This method returns a tuple containing the last key-value pair removed from the dictionary.
+  If the dictionary is empty, it raises a KeyError.
+
+setdefault() Method
+Python Dictionary setdefault() returns the value of a key (if the key is in dictionary). Else, it inserts a key with the default value to the dictionary.
+
+- setdefault() Method Syntax:
+  Syntax: dict.setdefault(key, default_value)
+- Parameters:
+  It takes two parameters:
+  key – Key to be searched in the dictionary.
+  default_value (optional) – Key with a value default_value is inserted to the dictionary if key is not in the dictionary. If not provided, the default_value will be None.
+- Returns:
+  Value of the key if it is in the dictionary.
+  None if key is not in the dictionary and default_value is not specified.
+  default_value if key is not in the dictionary and default_value is specified.
