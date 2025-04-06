@@ -104,3 +104,26 @@ Python Dictionary setdefault() returns the value of a key (if the key is in dict
   Value of the key if it is in the dictionary.
   None if key is not in the dictionary and default_value is not specified.
   default_value if key is not in the dictionary and default_value is specified.
+
+  values() methode
+  values() method in Python is used to obtain a view object that contains all the values in a dictionary. This view object is dynamic, meaning it updates automatically if the dictionary is modified.. If we use the type() method on the return value, we get “dict_values object”. It must be cast to obtain the actual list.
+
+- values() syntax
+  dict.values()
+  Here, dict is the dictionary from which the values are to be retrieved.
+  -Parameters:
+  values() method does not take any parameters.
+- Returns:
+  This method returns a dict_values view object, which behaves like a dynamic list of all the values in the dictionary. If the dictionary is updated, the view reflects these changes automatically.
+
+update() method
+Python Dictionary update() method updates the dictionary with the elements from another dictionary object or from an iterable of key/value pairs.
+Syntax of Dictionary update Method
+The dictionary update() method in Python has the following syntax:
+
+- Syntax:
+  dict.update([other])
+- Parameters:
+  This method takes either a dictionary or an iterable object of key/value pairs (generally tuples) as parameters.
+- Returns:
+  It doesn’t return any value but updates the Dictionary with elements from a dictionary object or an iterable object of key/value pairs.
