@@ -49,3 +49,33 @@ Python Method creates an immutable Set object from an iterable. It is a built-in
 - Parameter : iterable_object_name
   This function accepts iterable object as input parameter.
   Return : Returns an equivalent frozenset object.
+
+  Intersection() Methode
+  Python set intersection() method returns a new set with an element that is common to all set
+
+The intersection of two given sets is the largest set, which contains all the elements that are common to both sets. The intersection of two given sets A and B is a set which consists of all the elements which are common to both A and B.
+
+- Syntax:
+  set1.intersection(set2, set3, set4….)
+- Parameters:
+  any number of sets can be passed
+- Return:
+  Returns a set which has the intersection of all sets(set1, set2, set3…) with set1. It returns a copy of set1 only if no parameter is passed.
+
+Set isdisjoint() Method
+Python set isdisjoint() function check whether the two sets are disjoint or not, if it is disjoint then it returns True otherwise it will return False. Two sets are said to be disjoint when their intersection is null.
+
+- Python set isdisjoint() Method Syntax:
+  Syntax: set1.isdisjoint(set2)
+- Parameters:
+  another set to compare with or an iterable (list, tuple, dictionary, and string)
+  Return: bool
+
+Set issubset() Method
+Python set issubset() method returns True if all elements of a set A are present in another set B which is passed as an argument, and returns False if all elements are not present in Python.
+
+- Python Set issubset() Method Syntax
+  Syntax: set_obj.issubset(other_set)
+- Parameter:
+  other_set: any other set to compare with.
+- Return: bool
