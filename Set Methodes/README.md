@@ -79,3 +79,29 @@ Python set issubset() method returns True if all elements of a set A are present
 - Parameter:
   other_set: any other set to compare with.
 - Return: bool
+
+issuperset() in Python
+Python Set issuperset() method returns True if all elements of a set B are in set A. Then Set A is the superset of set B.
+Python issuperset() Method Syntax:
+-Syntax: A.issuperset(B)
+
+- Parameter: Any other Set to compare with
+- Return: boolean value
+
+Python Set pop() Method
+Python set pop() removes any random element from the set and returns the removed element.
+
+- Set pop() Syntax
+  Syntax: set_obj.pop()
+- Parameter: set.pop() doesn’t take any parameter.
+- Return: Returns the popped element from the set
+
+symmetric_difference()
+The symmetric difference of two sets set1 and set2 is the set of elements which are in either of the sets set1 or set2 but not in both.
+
+- Syntax :
+  set1_name.symmetric_difference(set2_name)
+- Parameters :
+  It only takes a single set as the parameter. If a list, tuple or dictionary is passed it converts it a set and performs the task.
+- Return value :
+  Returns a set which is the symmetric difference between the two sets.
