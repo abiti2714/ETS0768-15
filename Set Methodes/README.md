@@ -105,3 +105,45 @@ The symmetric difference of two sets set1 and set2 is the set of elements which 
   It only takes a single set as the parameter. If a list, tuple or dictionary is passed it converts it a set and performs the task.
 - Return value :
   Returns a set which is the symmetric difference between the two sets.
+
+symmetric_difference_update()
+The symmetric difference between the two sets is the set of elements that are in either of the sets but not in both of them.
+symmetric_difference() method returns a new set that contains a symmetric difference of two sets. The symmetric_difference_update() method updates the set by calling symmetric_difference_update() with the symmetric difference of sets.
+
+- symmetric_difference_update() Syntax
+- Syntax: A.symmetric_difference_update(B)
+- Parameters:
+  The symmetric_difference takes a single “iterable” as an argument. Iterable should contain hashable object.
+- Returns:
+  This method returns None (which indicates absence of a return value). It only updates the set calling symmetric_difference_update() with the symmetric difference of sets.
+
+Union() function
+Union() method in Python is an inbuilt function provided by the set data type. It is used to combine multiple sets into a single set, containing all unique elements from the given sets. It ensures that no duplicate values exist in the final set.
+
+- Union() Syntax
+  set1.union(set2, set3, …)
+- Parameters:
+  Zero or more sets can be passed as arguments.
+  If no parameter is provided, a copy of set1 is returned.
+- Returns:
+  A new set containing the union of all given sets.
+  Ensures no duplicate elements in the final set.
+
+Python Set update()
+The update() method in Python is used to modify dictionaries and sets. For dictionaries, it merges key-value pairs from another dictionary, iterable, or keyword arguments, updating existing keys or adding new ones. For sets, it adds elements from iterables (like lists or tuples), ignoring duplicates. For example, dict1.update(dict2) merges dictionaries, while set1.update([3, 4, 5]) adds elements to a set. It modifies the original collection in place, making it efficient for combining or updating data.
+
+- Syntax of set update():
+  dict.update([other])
+  other: This can be another dictionary, an iterable of key-value pairs (like a list of tuples), or keyword arguments.
+  If a key already exists in the dictionary, its value is updated. If the key does not exist, it is added to the dictionary.
+
+- update() method for dictionaries
+  update() method for dictionaries is used to add or update key-value pairs from one dictionary (or an iterable of key-value pairs) into another dictionary.
+- Update() method for set
+  The update() method for sets is used to add elements from another set, list, tuple, or any iterable to the set. It is used to add elements from one or more iterables (like sets, lists, tuples, etc.) to an existing set. When we call set1.update(iterable), the elements from the iterable are added to set1. Since sets only store unique elements, any duplicates in the iterable are automatically ignored.
+- Syntax:
+  set.update(*others)
+  *others: This can be one or more iterables (like sets, lists, tuples, etc.).
+  Duplicate elements are ignored because sets only store unique elements.
+- Adding Elements of a Dictionary to a Set
+  If we want to add the keys or values of a dictionary to a set, we can use the update() method in combination with dictionary methods like .keys() or .values().
