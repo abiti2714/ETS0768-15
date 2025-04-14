@@ -147,3 +147,41 @@ The update() method in Python is used to modify dictionaries and sets. For dicti
   Duplicate elements are ignored because sets only store unique elements.
 - Adding Elements of a Dictionary to a Set
   If we want to add the keys or values of a dictionary to a set, we can use the update() method in combination with dictionary methods like .keys() or .values().
+
+Set discard() Method
+The discard() method removes the specified item from the set.
+This method is different from the remove() method, because the remove() method will raise an error if the specified item does not exist, and the discard() method will not.
+
+- Syntax
+  set.discard(value)
+- Parameter Values
+  value Required. The item to search for, and remove
+
+Set intersection_update() Method
+The intersection_update() method removes the items that is not present in both sets (or in all sets if the comparison is done between more than two sets).
+The intersection_update() method is different from the intersection() method, because the intersection() method returns a new set, without the unwanted items, and the intersection_update() method removes the unwanted items from the original set.
+As a shortcut, you can use the &= operator instead.
+
+- Syntax
+  set.intersection_update(set1, set2 ... etc)
+- Parameter Values
+  set1 Required. The set to search for equal items in
+  set2 Optional. The other set to search for equal items in.
+  You can compare as many sets you like.
+  Separate the sets with a comma
+- Shorter Syntax
+  set &= set1 & set2 ... etc.
+- Parameter Values
+  set1 Required. The set to search for equal items in
+  set2 Optional. The other set to search for equal items in.
+  You can compare as many sets you like.
+  Separate the sets with & (a and operator).
+
+Set remove() Method
+The remove() method removes the specified element from the set.
+This method is different from the discard() method, because the remove() method will raise an error if the specified item does not exist, and the discard() method will not.
+
+- Syntax
+  set.remove(item)
+- Parameter Values
+  item Required. The item to search for, and remove
